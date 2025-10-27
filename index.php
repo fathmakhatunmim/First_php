@@ -38,6 +38,8 @@
    foreach($cars as $car){
     echo "<span style='display:block; margin-bottom:20px;'>$car</span>";
 }
+
+
     //remove array items
     $cars = array("Volvo", "BMW", "Toyota");
     array_splice($cars, 1, 1);
@@ -45,8 +47,12 @@
     echo $car . "<br>";
     }
      
-
-      
+//sorting
+$cars = array("Volvo", "BMW", "Toyota");
+sort($cars);
+      foreach($cars as $car){
+    echo $car . "<br><br>";
+    }
 
        ?>
 </body>
